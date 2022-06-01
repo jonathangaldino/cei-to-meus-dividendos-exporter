@@ -1,0 +1,12 @@
+{
+  "name": "cei-to-meus-dividendos",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "author": "Jonathan Galdino <johnzballad@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "node-xlsx": "^0.21.0",
+    "yargs": "^17.5.1"
+  }
+}

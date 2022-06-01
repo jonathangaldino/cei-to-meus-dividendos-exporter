@@ -6,6 +6,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "csv-writer": "^1.6.0",
     "node-xlsx": "^0.21.0",
     "yargs": "^17.5.1"
   }

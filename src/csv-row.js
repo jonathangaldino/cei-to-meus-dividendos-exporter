@@ -1,22 +1,23 @@
-class CsvRow {
-  constructor({ code, date, value, quantity, type, expense }) {
-    this.code = code
-    this.date = date
-    this.value = value
-    this.quantity = quantity
-    this.type = type
-    this.expense = expense
+const formatCode = code => code.split(' ')[0];
+const formatValue = value => value.toLocaleString('pt-br', { minimumFractionDigits: 2 } );
+const translateType = type => {
+  const types = {
+    'Credito': 'Compra',
+    'Debito': 'Venda'
   }
 
-  toObject() {
-    return {
-      code: this.code,
-      date: this.date,
-      value: this.value,
-      quantity: this.quantity,
-      type: this.type,
-      expense: this.expense
-    }
+  return types[type];
+}
+
+
+class CsvRow {
+  constructor({ code, date, value, quantity, type }) {
+    this.code = formatCode(code)
+    this.date = date
+    this.value = formatValue(value)
+    this.quantity = parseInt(quantity)
+    this.type = translateType(type)
+    this.expense = '0,0'
   }
 }
 

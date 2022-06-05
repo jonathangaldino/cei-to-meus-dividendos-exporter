@@ -5,6 +5,10 @@
   "author": "Jonathan Galdino <johnzballad@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": ">=18.2.0",
+    "npm": ">=8.11.0"
+  },
   "dependencies": {
     "csv-writer": "^1.6.0",
     "node-xlsx": "^0.21.0",

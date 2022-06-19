@@ -4,6 +4,11 @@
  */
 
 export default {
+  testEnvironment: "node",
   clearMocks: true,
+  coverageDirectory: "coverage",
   coverageProvider: "v8",
+  collectCoverageFrom: [
+    "__tests__/*.spec.js"
+  ],
 };

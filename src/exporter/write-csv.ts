@@ -1,5 +1,5 @@
 import { createObjectCsvWriter } from 'csv-writer'
-import { PATH_TO_OUTPUT_FOLDER, CSV_HEADERS } from './constants.js'
+import { PATH_TO_OUTPUT_FOLDER, CSV_HEADERS } from '../constant'
 
 const csvWriter = createObjectCsvWriter({
   path: `${PATH_TO_OUTPUT_FOLDER}/output.csv`,

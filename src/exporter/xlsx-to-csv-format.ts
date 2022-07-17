@@ -1,4 +1,4 @@
-import CsvRow from "./csv-row.js";
+import CsvRow from "./csv-row";
 
 function xlsxToCsvFormat(workbook) {
   const workbookData = workbook.data.slice(1)
